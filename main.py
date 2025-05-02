@@ -2,7 +2,7 @@ from struct import pack
 from tkinter import *
 import requests
 root = Tk()
-
+root.configure(bg='white')
 options = { 'uk','de','en','fr','es'}
 options_sec = { 'uk','de','en','fr','es'}
   
@@ -12,20 +12,23 @@ clicked.set('Input_lenguage')
 clicked_sec = StringVar()
 clicked_sec.set('Translation_language')
 
-drop = OptionMenu( root , clicked , *options )
-drop.pack()
-drop = OptionMenu( root , clicked_sec , *options_sec )
+drop = OptionMenu(root, clicked, *options)
+drop.configure(bg='white')  # Set dropdown background
 drop.pack()
 
-label = Label( root , text = " " )
+drop_sec = OptionMenu(root, clicked_sec, *options_sec)
+drop_sec.configure(bg='white')
+drop_sec.pack()
+
+label = Label( root , text = " ", bg='white' )
 label.pack()
 
-Fr_lab = Label(text="Please print id:")
+Fr_lab = Label(text="Please print id:", bg='white')
 Fr_fra = Frame()
 Fr_lab.pack()
 Fr_fra.pack()
 
-entry_id = Entry(master=Fr_fra)
+entry_id = Entry(master=Fr_fra, bg='white')
 
 entry_id.grid(row=1, column=1)
 First_fr = Frame()
