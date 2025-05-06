@@ -45,7 +45,7 @@ def send_id():
     }   
     headers = {
     "content-type": "application/json",
-    "X-RapidAPI-Key": "f0eda7c17amsha10f3c793fdf668p1ba57fjsn4b46df9be184",
+    "X-RapidAPI-Key": "Your_api_key",
     "X-RapidAPI-Host": "deep-translate1.p.rapidapi.com"
     }
 
